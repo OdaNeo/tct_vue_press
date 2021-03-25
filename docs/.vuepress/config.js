@@ -3,23 +3,17 @@ module.exports = {
     dest: './dist', 
     themeConfig: {
         nav: [
-          { text: 'Home', link: '/' },
-          { text: 'Guide', link: '/guide/' },
-          { text: 'External', link: '#' },
+          { text: '文档', link: '/guide/' },
+          { text: '非容器化部署平台', link: 'http://1.1.1.1', target:'_blank' },
         ],
+        lastUpdated: '上次更新',
+        smoothScroll: true,
         sidebarDepth: 2,
         sidebar: [
             {
-                title: 'Guide',
-                collapsable: true,
+                collapsable: false,
                 children: ['/guide/']
             },
-            {
-                title: 'Guide2',
-                collapsable: true,
-                children: ['/guide2/']
-            }             
         ],
     },
-   
 }
